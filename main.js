@@ -39,3 +39,12 @@ program
 program.parse(program.argv);
 
 const options = program.opts();
+
+const server = http.createServer((req, res) => {
+    res.writeHead(200, {});
+    res.end('My first http server');
+});
+
+server.listen(options.port, () => {
+    console.log('Server started at http://localhost:${options.port}')
+})
