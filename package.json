@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "commander": "^14.0.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security"
+  },
+  "name": "lab4",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StarukhDaniil/backend-course-2025-4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StarukhDaniil/backend-course-2025-4/issues"
+  },
+  "homepage": "https://github.com/StarukhDaniil/backend-course-2025-4#readme"
+}
