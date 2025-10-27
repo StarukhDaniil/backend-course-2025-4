@@ -75,15 +75,15 @@ function filterJSON(json, rainfall, humidity) {
     return result;
 }
 
-function convertResultToXML(result) {
+function convertResultToXML(result, r, h) {
     const xmlData = {
         records: {
             record: result.map(line => {
             const parts = line.split(' '); // ["Rainfall","Pressure","Humidity"]
             return {
-                ...(options.rainfall && { Rainfall: parts.shift() }),
+                ...(r && { Rainfall: parts.shift() }),
                 Pressure3pm: parts[0],
-                ...(options.humidity && { Humidity3pm: parts[1] })
+                ...(h && { Humidity3pm: parts[1] })
             };
             })
         }
